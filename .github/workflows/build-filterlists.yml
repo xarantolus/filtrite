@@ -1,0 +1,41 @@
+name: Build filterlists
+
+on:
+  push:
+    branches: [ main ]
+  
+  schedule:
+  - cron: "0 15 * * *"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Set up Go 1.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: ^1.15
+
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v2
+
+    - name: Download dependencies
+      run: |
+        go get -v -t -d ./...
+        if [ -f Gopkg.toml ]; then
+            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+            dep ensure
+        fi
+      
+    - name: Runnning build/generation script
+      shell: bash
+      run: |
+        bash ./generate.sh
+        
+    - name: Release filter lists
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/*.dat
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
