@@ -56,4 +56,9 @@ func main() {
 	if err != nil {
 		panic("generating distributable list: " + err.Error())
 	}
+
+	err = util.AppendReleaseList(listTextFile, len(paths), len(filterListURLs))
+	if err != nil {
+		panic("generating release list: " + err.Error())
+	}
 }
