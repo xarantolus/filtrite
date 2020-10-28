@@ -13,7 +13,14 @@ log "Building"
 
 go build -v -o filtrite
 
+
+# Last setup steps
+chmod +x filtrite
+chmod +x deps/ruleset_converter
+mkdir -p dist
+
 log "Start generating bromite-extended"
+
 
 ./filtrite lists/bromite-extended.txt dist/bromite-extended.dat
 
