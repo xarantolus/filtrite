@@ -34,7 +34,7 @@ jobs:
         bash ./generate.sh
         
     - name: Generate tag name
-      run: echo "TAG_NAME=$(date +%F_%H-%M)" >> $TAG_NAME  
+      run: echo "TAG_NAME=$(date +%F_%H-%M)" >> $GITHUB_ENV  
 
     - name: Release filter lists
       uses: softprops/action-gh-release@v1
