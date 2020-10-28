@@ -29,7 +29,7 @@ func main() {
 	}
 
 	// Create temporary directory and make sure we remove it afterwards
-	err = os.MkdirAll(tmpDir, 0644)
+	err = os.MkdirAll(tmpDir, os.ModePerm)
 	if err != nil {
 		panic("creating temp directory for filter lists:" + err.Error())
 	}
