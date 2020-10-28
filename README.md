@@ -16,7 +16,7 @@ Here's a list:
 
 These lists are regularly updated automatically using GitHub Actions.
 
-**Note**: I'm not 100% sure if all list formats that are used are actually supported by the ruleset generation tool (as the output indicates some failures). If you have a comment on that, please
+**Note**: I'm not 100% sure if all list formats that are used are actually supported by the ruleset generation tool (as the output indicates some failures). If you have a comment on that, please open an issue :)
 
 ### Contributing
 This program is designed in a way that allows easily adding new lists. 
