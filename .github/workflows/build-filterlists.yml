@@ -33,9 +33,13 @@ jobs:
       run: |
         bash ./generate.sh
         
+    - name: Generate tag name
+      run: echo "TAG_NAME=$(date +%F_%H-%M)" >> $TAG_NAME  
+
     - name: Release filter lists
       uses: softprops/action-gh-release@v1
       with:
         files: dist/*.dat
+        tag_name: ${{ env.TAG_NAME }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
