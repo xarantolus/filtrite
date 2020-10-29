@@ -19,6 +19,9 @@ chmod +x filtrite
 chmod +x deps/ruleset_converter
 mkdir -p dist
 
+# Download default bromite filter list
+wget -O lists/bromite-default.txt https://raw.githubusercontent.com/bromite/filters/master/lists.txt
+
 log "Start generating bromite-default"
 ./filtrite lists/bromite-default.txt dist/bromite-default.dat
 
