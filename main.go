@@ -15,9 +15,9 @@ const (
 func main() {
 	flag.Parse()
 
-	listTextFile, outputFile := flag.Arg(0), flag.Arg(1)
+	listTextFile, outputFile, logPath := flag.Arg(0), flag.Arg(1), flag.Arg(2)
 	if listTextFile == "" || outputFile == "" {
-		log.Fatalln("need two args, first is URL input list and second one is output file")
+		log.Fatalln("need at least two args, first is URL input list and second one is output file")
 	}
 
 	log.Println("Reading lists...")
@@ -52,7 +52,7 @@ func main() {
 	}
 
 	log.Println("Converting ruleset...")
-	err = util.GenerateDistributableList(paths, outputFile)
+	err = util.GenerateDistributableList(paths, outputFile, logPath)
 	if err != nil {
 		panic("generating distributable list: " + err.Error())
 	}

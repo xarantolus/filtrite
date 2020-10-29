@@ -10,7 +10,7 @@ const (
 	rulesetExecutable = "deps/ruleset_converter"
 )
 
-func GenerateDistributableList(inputPaths []string, output string) (err error) {
+func GenerateDistributableList(inputPaths []string, output string, logPath string) (err error) {
 	// ruleset_converter --input_format=filter-list \
 	// --output_format=unindexed-ruleset \
 	//         --input_files=easyprivacy.txt,easylist.txt \
@@ -18,7 +18,17 @@ func GenerateDistributableList(inputPaths []string, output string) (err error) {
 	// Example: https://www.bromite.org/custom-filters
 
 	cmd := exec.Command(rulesetExecutable, "--input_format=filter-list", "--output_format=unindexed-ruleset", "--input_files="+strings.Join(inputPaths, ","), "--output_file="+output)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
+
+	if logPath != "" {
+		f, err := os.Create(logPath)
+		if err != nil {
+			return err
+		}
+		defer f.Close()
+
+		cmd.Stdout = f
+		cmd.Stderr = f
+	}
+
 	return cmd.Run()
 }
