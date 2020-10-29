@@ -37,14 +37,15 @@ http://  # Comment on URL
 ```
 3. Save your file
 4. Update [`generate.sh`](generate.sh) to include your entry:
-```
+```bash
 ...
 
+echo "::group::{List: example-list}"
 log "Start generating example-list"
-
-# ./filtrite <input list> <output>
+# Syntax: ./filtrite <input list> <output>
 # Make sure that your output has a `.dat` suffix
 ./filtrite lists/example-list.txt dist/example-list.dat
+echo "::endgroup::"
 
 ...
 ```
