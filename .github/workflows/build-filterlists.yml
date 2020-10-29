@@ -53,3 +53,8 @@ jobs:
         delete_tags: true 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Logs
+        path: logs/*.log
