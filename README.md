@@ -40,7 +40,7 @@ http://  # Comment on URL
 ```bash
 ...
 
-echo "::group::{List: example-list}"
+echo "::group::List: example-list"
 log "Start generating example-list"
 # Syntax: ./filtrite <input list> <output>
 # Make sure that your output has a `.dat` suffix
