@@ -47,5 +47,3 @@ filtrite example-list
 ```
 6. Link your filter list in the README, using this URL: `https://github.com/xarantolus/filtrite/releases/latest/download/{YOUR FILENAME}.dat`. Replace `{YOUR FILENAME}` with the filename of the `.dat` file.
 7. Create a pull request
-
-Please also note that the script must be run on `linux/amd64` because `deps/ruleset_converter` is compiled for that.
