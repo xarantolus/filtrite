@@ -59,3 +59,4 @@ jobs:
       with:
         name: Logs
         path: logs/*.log
+      if: ${{ always() }}
