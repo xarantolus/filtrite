@@ -1,17 +1,34 @@
 package util
 
 import (
-	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
+	"text/template"
 )
 
 const (
 	releaseFile = "release.md"
+
+	lineTemplate = "* {{if .Repo}}[`{{.ListName}}`](https://github.com/{{.Repo}}/releases/latest/download/{{.ListName}}.dat){{else}}`{{.ListName}}`{{end}}: updated {{.GotCount}}/{{.FullCount}} list{{if ne .FullCount 1}}s{{end}}{{if ne .ErrorCount 0}}, {{if eq .ErrorCount 1}}one error{{else}}{{.ErrorCount}} errors{{end}}{{end}}\n"
 )
 
-// AppendReleaseList appends
+var (
+	tmpl = template.Must(template.New("").Parse(lineTemplate))
+)
+
+type info struct {
+	ListName string
+
+	Repo string
+
+	GotCount  int
+	FullCount int
+
+	ErrorCount int
+}
+
+// AppendReleaseList appends information about this list/download to the release file
 func AppendReleaseList(fn string, gotCount, fullCount int) (err error) {
 	f, err := os.OpenFile(releaseFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
@@ -19,16 +36,13 @@ func AppendReleaseList(fn string, gotCount, fullCount int) (err error) {
 	}
 	defer f.Close()
 
-	var (
-		errorCount   = fullCount - gotCount
-		friendlyName = strings.TrimSuffix(filepath.Base(fn), ".txt")
-	)
+	var friendlyName = strings.TrimSuffix(filepath.Base(fn), ".txt")
 
-	if errorCount == 1 {
-		fmt.Fprintf(f, "* `%s`: updated %d/%d lists, one error\n", friendlyName, gotCount, fullCount)
-	} else {
-		fmt.Fprintf(f, "* `%s`: updated %d/%d lists, %d errors\n", friendlyName, gotCount, fullCount, errorCount)
-	}
-
-	return
+	return tmpl.Execute(f, info{
+		ListName:   friendlyName,
+		Repo:       os.Getenv("GITHUB_REPOSITORY"),
+		GotCount:   gotCount,
+		FullCount:  fullCount,
+		ErrorCount: fullCount - gotCount,
+	})
 }

@@ -45,6 +45,10 @@ func main() {
 
 	log.Printf("Got %d/%d\n", len(paths), len(filterListURLs))
 
+	if len(paths) == 0 {
+		panic("all lists failed to download")
+	}
+
 	// make sure dir exists
 	err = os.MkdirAll(filepath.Dir(outputFile), 0664)
 	if err != nil {

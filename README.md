@@ -47,3 +47,10 @@ filtrite example-list
 ```
 6. Link your filter list in the README, using this URL: `https://github.com/xarantolus/filtrite/releases/latest/download/{YOUR FILENAME}.dat`. Replace `{YOUR FILENAME}` with the filename of the `.dat` file.
 7. Create a pull request
+
+
+You can of course also fork this repository, create your own list and keep it on your own account. 
+Enable GitHub Actions in the settings of your repository to make it work.
+
+### [License](LICENSE)
+This is free as in freedom software. Do whatever you like with it.
