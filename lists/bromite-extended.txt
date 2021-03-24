@@ -23,3 +23,15 @@ https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_dis
 
 # Third party fonts
 https://fanboy.co.nz/fanboy-antifonts.txt
+
+# Adblock ID
+https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
+
+#ABPindo
+https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt
+
+#ABPindo noannoyance
+https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo_noannoyance.txt
+
+#ABPindo noelementhide
+https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo_noelemhide.txt
