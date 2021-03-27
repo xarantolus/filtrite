@@ -23,3 +23,6 @@ https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_dis
 
 # Third party fonts
 https://fanboy.co.nz/fanboy-antifonts.txt
+
+# Annoyances on Twitter
+https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt
