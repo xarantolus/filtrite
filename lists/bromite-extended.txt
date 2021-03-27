@@ -12,6 +12,8 @@ https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 # Annoying Elements, Cookie promts etc.
 https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
+https://secure.fanboy.co.nz/fanboy-annoyance.txt
+https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
 
 # Other uBlock Origin filters
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
@@ -23,6 +25,9 @@ https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_dis
 
 # Third party fonts
 https://fanboy.co.nz/fanboy-antifonts.txt
+
+# Other third-party tracking
+https://easylist.to/easylist/fanboy-social.txt
 
 # Annoyances on Twitter
 https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt
