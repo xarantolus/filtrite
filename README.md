@@ -32,8 +32,8 @@ To add a new list:
 https://...
 https://...
 
-# This won't work, only put either a comment or an URL in one line, not both
-http://  # Comment on URL
+# The following line doesn't work, only put either a comment or an URL in one line, not both
+http://  # Invalid comment on URL
 ```
 3. Save your file
 4. Update [`generate.sh`](generate.sh) to include your entry:
