@@ -1,0 +1,6 @@
+# See https://github.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/blob/master/USAGE.md
+# Since this tool doesn't support a whitelist, this will block even more, even stuff it shouldn't
+https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard/master/Blocklist/filter_blocklist1.txt
+https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard/master/Blocklist/filter_blocklist2.txt
+https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard/master/Blocklist/filter_blocklist3.txt
+https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard/master/Blocklist/filter_blocklist4.txt

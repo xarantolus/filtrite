@@ -50,6 +50,7 @@ echo "::endgroup::"
 
 # All other lists can be listed here
 filtrite bromite-extended
+filtrite hl2guide-extreme
 
 echo "::group::Cleanup"
 cleanup
