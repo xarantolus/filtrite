@@ -17,13 +17,8 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
 # CNAME record trackers
 https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
 
-# Third party fonts and social
+# Third party fonts
 https://fanboy.co.nz/fanboy-antifonts.txt
-https://easylist-downloads.adblockplus.org/fanboy-social.txt
-
-#adguard
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
 
 #energized spark
 https://block.energized.pro/spark/formats/domains.txt
