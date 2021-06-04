@@ -8,10 +8,8 @@ https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt
 # Online Malicious URL Blocklist
 https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt
 
-# Annoying Elements, social media likes etc...
-https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
-https://secure.fanboy.co.nz/fanboy-annoyance.txt
-https://easylist.to/easylist/fanboy-social.txt
+# fanboy's complete
+https://fanboy.co.nz/r/fanboy-ultimate.txt
 
 #url tracking filter adguard 
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
@@ -19,13 +17,13 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
 # CNAME record trackers
 https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
 
-# Third party fonts
+# Third party fonts and social
 https://fanboy.co.nz/fanboy-antifonts.txt
+https://easylist-downloads.adblockplus.org/fanboy-social.txt
 
-https://filters.adtidy.org/extension/chromium/filters/15.txt
+#adguard
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
 
 #energized spark
 https://block.energized.pro/spark/formats/domains.txt
-
-#energized extreme
-https://block.energized.pro/extensions/xtreme/formats/domains.txt
