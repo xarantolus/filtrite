@@ -7,6 +7,8 @@ https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
 https://easylist.to/easylist/easyprivacy.txt
 https://secure.fanboy.co.nz/enhancedstats.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
 
 #annoynces
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
