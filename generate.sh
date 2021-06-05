@@ -50,6 +50,8 @@ echo "::endgroup::"
 
 # All other lists can be listed here
 filtrite eadu
+filtrite bromite-adguard
+filtrite experimental
 
 echo "::group::Cleanup"
 cleanup
