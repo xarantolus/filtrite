@@ -1,11 +1,9 @@
 #adguard base list, mobile ads and petter lowes
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
 
 #tracking protection filter
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
-https://easylist.to/easylist/easyprivacy.txt
 https://secure.fanboy.co.nz/enhancedstats.txt
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
