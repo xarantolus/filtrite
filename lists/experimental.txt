@@ -1,15 +1,1 @@
-#adguard base list, mobile ads and petter lowes
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
-
-#tracking protection filter
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
-https://secure.fanboy.co.nz/enhancedstats.txt
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
-https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
-
-#annoynces
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
-https://secure.fanboy.co.nz/fanboy-annoyance.txt
-https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
-https://fanboy.co.nz/fanboy-antifonts.txt
+https://hblock.molinero.dev/hosts_adblock.txt
