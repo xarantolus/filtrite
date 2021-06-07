@@ -1,1 +1,1 @@
-https://hblock.molinero.dev/hosts_adblock.txt
+https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt
