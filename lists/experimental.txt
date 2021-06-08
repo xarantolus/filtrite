@@ -1,8 +1,14 @@
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
+https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
+https://filters.adtidy.org/extension/ublock/filters/239_optimized.txt
 
-https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt
-https://filters.adtidy.org/extension/ublock/filters/204_optimized.txt
-https://fanboy.co.nz/fanboy-antifonts.txt
+https://filters.adtidy.org/extension/ublock/filters/207_optimized.txt
