@@ -1,5 +1,8 @@
-https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/cpbl-abp-list.txt
-https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
+
+https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt
+https://filters.adtidy.org/extension/ublock/filters/204_optimized.txt
 https://fanboy.co.nz/fanboy-antifonts.txt
