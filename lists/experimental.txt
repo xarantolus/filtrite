@@ -1,14 +1,20 @@
+#adblocking- adguard base, mobile, peter lowe
 https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt
 https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/204_optimized.txt
+#privacy- adguard tracking,easyprivacy, fanboys enhanced/anti third fonts
+https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
 https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/215_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/239_optimized.txt
+#social- adguard social media
+https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt
+#annoyances
+https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/201_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/207_optimized.txt
+#extras
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
-https://filters.adtidy.org/extension/ublock/filters/239_optimized.txt
-
-https://filters.adtidy.org/extension/ublock/filters/207_optimized.txt
