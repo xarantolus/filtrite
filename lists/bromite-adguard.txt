@@ -8,12 +8,12 @@ https://filters.adtidy.org/extension/chromium/filters/2.txt
 https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
 #privacy
 https://filters.adtidy.org/extension/chromium/filters/3.txt
-https://filters.adtidy.org/extension/chromium/filters/118.txt
+https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
 https://filters.adtidy.org/extension/ublock/filters/215_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/239.txt
 #annoynces
 https://filters.adtidy.org/extension/chromium/filters/14.txt
-https://filters.adtidy.org/extension/chromium/filters/122.txt
+https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt
 https://filters.adtidy.org/extension/ublock/filters/201_optimized.txt
 #social
 https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt
