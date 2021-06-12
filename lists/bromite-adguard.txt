@@ -4,14 +4,14 @@ https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt
 https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt
 https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt
 
-https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/122_optimized.txt
+https://filters.adtidy.org/extension/chromium/filters/2.txt
+https://filters.adtidy.org/extension/chromium/filters/3.txt
+https://filters.adtidy.org/extension/chromium/filters/4.txt
+https://filters.adtidy.org/extension/chromium/filters/11.txt
+https://filters.adtidy.org/extension/chromium/filters/14.txt
+https://filters.adtidy.org/extension/chromium/filters/17.txt
+https://filters.adtidy.org/extension/chromium/filters/118.txt
+https://filters.adtidy.org/extension/chromium/filters/122.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
