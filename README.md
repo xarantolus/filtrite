@@ -17,14 +17,15 @@ These lists are regularly updated automatically using GitHub Actions.
 
 **Note**: I'm not 100% sure if all list formats that are used are actually supported by [the ruleset generation tool](https://github.com/xarantolus/subresource_filter_tools) (as the output indicates some failures). If you have a comment on that, please open an issue :)
 
-### Contributing
+### Using your own filter lists
 This program is designed in a way that allows easily adding new lists. 
-If you have an idea for new lists & combinations, then feel free to open an issue or pull request to point it out.
 
-To add a new list:
+To create a new list:
 
-1. Choose a name, e.g. `example-list`
-2. Create a file `lists/example-list.txt` that contains all URLs. It should look like this:
+1. Fork this repository
+2. Enable GitHub Actions in the settings of your forked repository
+3. Choose a name for the list, e.g. `example-list`
+4. Create a file `lists/example-list.txt` that contains all URLs. It should look like this:
 ```
 # Comments and empty lines are allowed
 # List one URL per line:
@@ -34,8 +35,8 @@ https://...
 # The following line doesn't work, only put either a comment or an URL in one line, not both
 http://  # Invalid comment on URL
 ```
-3. Save your file
-4. Update [`generate.sh`](generate.sh) to include your entry:
+5. Save your file
+6. Update [`generate.sh`](generate.sh) to include your entry:
 ```bash
 ...
 # All other lists can be listed here
@@ -44,12 +45,9 @@ filtrite example-list
 
 ...
 ```
-6. Link your filter list in the README, using this URL: `https://github.com/xarantolus/filtrite/releases/latest/download/{YOUR FILENAME}.dat`. Replace `{YOUR FILENAME}` with the filename of the `.dat` file.
-7. Create a pull request
+7. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. 
+8. Set this URL for the filters file in Bromite.
 
-
-You can of course also fork this repository, create your own list and keep it on your own account. 
-Enable GitHub Actions in the settings of your repository to make it work.
 
 ### [License](LICENSE)
 This is free as in freedom software. Do whatever you like with it.
