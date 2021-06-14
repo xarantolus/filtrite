@@ -1,4 +1,4 @@
-https://filters.adtidy.org/extension/chromium/filters/15_optimized.txt
+https://filters.adtidy.org/extension/chromium/filters/15.txt
 https://filters.adtidy.org/extension/chromium/filters/215_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/239_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/14_optimized.txt
