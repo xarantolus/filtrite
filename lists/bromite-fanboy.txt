@@ -1,1 +1,1 @@
-https://secure.fanboy.co.nz/r/fanboy-ultimate.txt
+https://filters.adtidy.org/extension/chromium/filters/15_optimized.txt
