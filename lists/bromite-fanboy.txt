@@ -1,11 +1,1 @@
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/thirdparties/pgl.yoyo.org/as/serverlist
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
-https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
-https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
-https://easylist-msie.adblockplus.org/abp-filters-anti-cv.txt
-https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/english.txt
-https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
+https://filters.adtidy.org/extension/chromium/filters/15.txt
