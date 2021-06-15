@@ -1,9 +1,1 @@
-https://filters.adtidy.org/extension/chromium/filters/15.txt
-https://filters.adtidy.org/extension/chromium/filters/215_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/239_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/14_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/122_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/207_optimized.txt
-https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
-https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
-https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
+https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt
