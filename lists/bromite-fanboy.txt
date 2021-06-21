@@ -1,1 +1,12 @@
-https://sebsauvage.net/hosts/hosts-adguard
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+https://github.com/uBlockOrigin/uAssets/raw/master/filters/badware.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
+https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/204_optimized.txt
+https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
+https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
