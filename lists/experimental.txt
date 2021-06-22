@@ -17,3 +17,4 @@ https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
+https://abp.oisd.nl/extra/
