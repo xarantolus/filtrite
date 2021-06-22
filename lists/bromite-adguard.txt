@@ -18,3 +18,4 @@ https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.t
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt
+https://abp.oisd.nl/extra/
