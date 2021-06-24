@@ -14,7 +14,5 @@ https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.t
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
 https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
-https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
-https://abp.oisd.nl/extra/
