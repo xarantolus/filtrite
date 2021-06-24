@@ -13,9 +13,10 @@ https://filters.adtidy.org/extension/chromium/filters/207_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/229_optimized.txt
 #social
 https://filters.adtidy.org/extension/chromium/filters/4_optimized.txt
-
+#extras
+https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
-https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt
-https://abp.oisd.nl/extra/
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
