@@ -1,2 +1,2 @@
-https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-https://abp.oisd.nl/extra/
+https://block.energized.pro/assets/sources/filter/adguard-english-filter.txt
+https://hosts.oisd.nl/extra/
