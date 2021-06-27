@@ -1,16 +1,14 @@
 #adblock
 https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/11_optimized.txt
+https://filters.adtidy.org/extension/chromium/filters/204_optimized.txt
 #privacy
 https://filters.adtidy.org/extension/chromium/filters/3_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/118_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/215_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/239_optimized.txt
 #annoynces
 https://filters.adtidy.org/extension/chromium/filters/14_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/122_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/207_optimized.txt
-https://filters.adtidy.org/extension/chromium/filters/229_optimized.txt
 #social
 https://filters.adtidy.org/extension/chromium/filters/4_optimized.txt
 #extras
