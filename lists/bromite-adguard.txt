@@ -5,8 +5,8 @@ https://filters.adtidy.org/extension/chromium/filters/3_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/118_optimized.txt
 #annoynces
 https://filters.adtidy.org/extension/chromium/filters/207_optimized.txt
-https://filters.adtidy.org/extension/ublock/filters/239.txt
-https://filters.adtidy.org/extension/chromium/filters/229_optimized.txt
+https://filters.adtidy.org/extension/chromium/filters/239.txt
+https://filters.adtidy.org/extension/chromium/filters/122_optimized.txt
 #extras
 https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
