@@ -14,4 +14,3 @@ https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.tx
 https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblock;showintro=0
