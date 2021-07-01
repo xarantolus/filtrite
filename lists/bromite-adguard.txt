@@ -10,8 +10,6 @@ https://filters.adtidy.org/extension/chromium/filters/239.txt
 https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
-https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt
+https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt
