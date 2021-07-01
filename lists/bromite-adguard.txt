@@ -4,6 +4,7 @@ https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/118_optimized.txt
 #annoynces
 https://filters.adtidy.org/extension/chromium/filters/207_optimized.txt
+https://filters.adtidy.org/extension/chromium/filters/122_optimized.txt
 https://filters.adtidy.org/extension/chromium/filters/239.txt
 #extras
 https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
