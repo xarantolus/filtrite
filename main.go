@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/fs"
 	"log"
 	"os"
 	"path/filepath"
@@ -89,7 +88,7 @@ func generateFilterList(listTextFile string) (err error) {
 func main() {
 	log.Println("Reading lists...")
 
-	err := filepath.WalkDir(listDir, func(path string, d fs.DirEntry, err error) error {
+	err := filepath.Walk(listDir, func(path string, d os.FileInfo, err error) error {
 		if err != nil {
 			log.Printf("Walk: Error: %s\n", err.Error())
 			return nil
