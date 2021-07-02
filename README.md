@@ -23,7 +23,7 @@ This program is designed in a way that allows easily adding new lists.
 To create a new list:
 
 1. Fork this repository
-2. Enable GitHub Actions in the settings of your forked repository
+2. Enable GitHub Actions by switching to the "Actions" tab of your repo, then confirming that you want to enable them
 3. Choose a name for the list, e.g. `example-list`
 4. Create a file `lists/example-list.txt` (aka in the `lists` directory) that contains all URLs. It should look like this:
 ```
