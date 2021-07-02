@@ -31,7 +31,7 @@ func generateFilterList(listTextFile string) (err error) {
 	)
 
 	fmt.Printf("::group::List: %s\n", listName)
-	defer fmt.Printf("::endgroup::")
+	defer fmt.Println("::endgroup::")
 
 	var (
 		outputFile = filepath.Join(distDir, listName+".dat")
@@ -86,8 +86,6 @@ func generateFilterList(listTextFile string) (err error) {
 }
 
 func main() {
-	log.Println("Reading lists...")
-
 	err := filepath.Walk(listDir, func(path string, d os.FileInfo, err error) error {
 		if err != nil {
 			log.Printf("Walk: Error: %s\n", err.Error())
@@ -98,7 +96,7 @@ func main() {
 		}
 
 		if !strings.HasSuffix(path, ".txt") {
-			fmt.Printf("File %q was not processed because it does not end with \".txt\"\n", path)
+			log.Printf("File %q was not processed because it does not end with \".txt\"\n", path)
 			return nil
 		}
 
