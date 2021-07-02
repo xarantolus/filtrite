@@ -1,37 +1,54 @@
 package main
 
 import (
-	"flag"
+	"fmt"
+	"io/fs"
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
+	"unicode"
 	"xarantolus/filtrite/util"
 )
 
 const (
-	tmpDir = "tmp"
+	tmpDir  = "tmp"
+	listDir = "lists"
+	distDir = "dist"
+	logDir  = "logs"
 )
 
-func main() {
-	flag.Parse()
+// generateFilterList generates a filter list from the listTextFile
+func generateFilterList(listTextFile string) (err error) {
 
-	listTextFile, outputFile, logPath := flag.Arg(0), flag.Arg(1), flag.Arg(2)
-	if listTextFile == "" || outputFile == "" {
-		log.Fatalln("need at least two args, first is URL input list and second one is output file")
-	}
+	var listName = strings.Map(
+		func(r rune) rune {
+			if unicode.IsSpace(r) {
+				return '_'
+			}
+			return r
+		},
+		strings.TrimSuffix(filepath.Base(listTextFile), ".txt"),
+	)
 
-	log.Println("Reading lists...")
+	fmt.Printf("::group::List: %s\n", listName)
+	defer fmt.Printf("::endgroup::")
+
+	var (
+		outputFile = filepath.Join(distDir, listName+".dat")
+		logFile    = filepath.Join(logDir, listName+".log")
+	)
 
 	// Load all URLs
 	filterListURLs, err := util.ReadListFile(listTextFile)
 	if err != nil {
-		panic("reading list file: " + err.Error())
+		return fmt.Errorf("reading list file: %w", err)
 	}
 
 	// Create temporary directory and make sure we remove it afterwards
 	err = os.MkdirAll(tmpDir, os.ModePerm)
 	if err != nil {
-		panic("creating temp directory for filter lists:" + err.Error())
+		return fmt.Errorf("creating temp directory for filter lists: %w", err)
 	}
 	defer os.RemoveAll(tmpDir)
 
@@ -40,29 +57,59 @@ func main() {
 	// Actually download lists
 	paths, err := util.DownloadURLs(filterListURLs, tmpDir)
 	if err != nil {
-		panic("downloading filter lists: " + err.Error())
+		return fmt.Errorf("downloading filter lists: %w", err)
 	}
 
 	log.Printf("Got %d/%d\n", len(paths), len(filterListURLs))
 
 	if len(paths) == 0 {
-		panic("all lists failed to download")
+		return fmt.Errorf("all lists failed to download")
 	}
 
 	// make sure dir exists
 	err = os.MkdirAll(filepath.Dir(outputFile), 0664)
 	if err != nil {
-		panic("creating distribution directory: " + err.Error())
+		return fmt.Errorf("creating distribution directory: %w", err)
 	}
 
 	log.Println("Converting ruleset...")
-	err = util.GenerateDistributableList(paths, outputFile, logPath)
+	err = util.GenerateDistributableList(paths, outputFile, logFile)
 	if err != nil {
-		panic("generating distributable list: " + err.Error())
+		return fmt.Errorf("generating distributable list: %w", err)
 	}
 
 	err = util.AppendReleaseList(listTextFile, len(paths), len(filterListURLs))
 	if err != nil {
-		panic("generating release list: " + err.Error())
+		return fmt.Errorf("generating release list: %w", err)
+	}
+
+	return nil
+}
+
+func main() {
+	log.Println("Reading lists...")
+
+	err := filepath.WalkDir(listDir, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			log.Printf("Walk: Error: %s\n", err.Error())
+			return nil
+		}
+		if d.IsDir() {
+			return nil
+		}
+
+		if !strings.HasSuffix(path, ".txt") {
+			fmt.Printf("File %q was not processed because it does not end with \".txt\"\n", path)
+			return nil
+		}
+
+		err = generateFilterList(path)
+		if err != nil {
+			log.Printf("Error while generating filter for %q: %s\n", path, err.Error())
+		}
+		return nil
+	})
+	if err != nil {
+		panic("error while walking: " + err.Error())
 	}
 }

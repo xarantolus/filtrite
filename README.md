@@ -25,7 +25,7 @@ To create a new list:
 1. Fork this repository
 2. Enable GitHub Actions in the settings of your forked repository
 3. Choose a name for the list, e.g. `example-list`
-4. Create a file `lists/example-list.txt` that contains all URLs. It should look like this:
+4. Create a file `lists/example-list.txt` (aka in the `lists` directory) that contains all URLs. It should look like this:
 ```
 # Comments and empty lines are allowed
 # List one URL per line:
@@ -35,19 +35,9 @@ https://...
 # The following line doesn't work, only put either a comment or an URL in one line, not both
 http://  # Invalid comment on URL
 ```
-5. Save your file
-6. Update [`generate.sh`](generate.sh) to include your entry:
-```bash
-...
-# All other lists can be listed here
-
-filtrite example-list
-
-...
-```
-7. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. 
-8. Set this URL for the filters file in Bromite.
-
+5. Save your file, commit and push
+6. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. 
+7. Set this URL as the filter file in Bromite settings.
 
 ### [License](LICENSE)
 This is free as in freedom software. Do whatever you like with it.

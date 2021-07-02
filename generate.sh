@@ -5,16 +5,10 @@ set -e
 log () {
     echo `date +"%m/%d/%Y %H:%M:%S"` "$@"
 }
+
 cleanup() {
     rm -f filtrite >> /dev/null 2>&1
 }
-filtrite() {
-    echo "::group::List: $1"
-    log "Start generating $1"
-    ./filtrite "lists/$1.txt" "dist/$1.dat" "logs/$1.log"
-    echo "::endgroup::"
-}
-
 cleanup
 
 # Make sure all dependencies are installed
@@ -44,16 +38,12 @@ mkdir -p dist
 mkdir -p logs
 echo "::endgroup::"
 
-# Default is a special case because of the download
-echo "::group::List: bromite-default"
-# Download default bromite filter list
+echo "::group::Downloading official list"
 wget -O lists/bromite-default.txt https://raw.githubusercontent.com/bromite/filters/master/lists.txt
-log "Start generating bromite-default"
-./filtrite lists/bromite-default.txt dist/bromite-default.dat logs/bromite-default.log
 echo "::endgroup::"
 
-# All other lists can be listed here
-filtrite bromite-extended
+# Now that everything is set up, we can start actually generating filter lists
+./filtrite 
 
 echo "::group::Cleanup"
 cleanup
