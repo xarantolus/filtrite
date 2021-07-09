@@ -2,6 +2,7 @@ package util
 
 import (
 	"bufio"
+	"log"
 	"net/url"
 	"os"
 	"sort"
@@ -23,15 +24,23 @@ func ReadListFile(fn string) (entries []string, err error) {
 	for scan.Scan() {
 		t := strings.TrimSpace(scan.Text())
 
-		// comments
+		// Remove comments and empty lines
 		if strings.HasPrefix(t, "#") || t == "" {
 			continue
 		}
 
-		if _, uerr := url.ParseRequestURI(t); uerr == nil {
-			if !entriesMap[t] {
-				entriesMap[t] = true
-			}
+		// Warn about invalid URLs
+		if _, uerr := url.ParseRequestURI(t); uerr != nil {
+			log.Printf("Invalid URL %q\n", t)
+			continue
+		}
+
+		if entriesMap[t] {
+			// We have seen this URL before. Just warn about it, nothing else
+			log.Printf("Duplicate URL %q will only be downloaded once\n", t)
+		} else {
+			// If we haven't seen this URL before, we add it to the list
+			entriesMap[t] = true
 		}
 	}
 
