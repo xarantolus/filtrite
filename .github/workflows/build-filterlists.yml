@@ -33,7 +33,7 @@ jobs:
     - name: Runnning build/generation script
       shell: bash
       run: |
-        bash ./generate.sh
+        bash ./generate.sh 2>&1
 
     - name: Generate tag name
       run: echo "TAG_NAME=$(date +%F-%H-%M)" >> $GITHUB_ENV  
