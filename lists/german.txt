@@ -18,6 +18,7 @@ https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralis
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
 https://secure.fanboy.co.nz/fanboy-annoyance.txt
 https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
+https://filters.adtidy.org/extension/ublock/filters/14.txt
 
 # Other uBlock Origin filters
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
