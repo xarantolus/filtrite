@@ -26,20 +26,21 @@ To create a new list:
 1. Fork this repository
 2. Enable GitHub Actions by switching to the "Actions" tab of your repo, then confirming that you want to enable them
 3. Choose a name for the list, e.g. `example-list`
-4. Search for filter lists you want to use. You can for example find them [here](https://filterlists.com/), use those in "uBlock Origin" or "AdBlock Plus" format. Go to info, then "View" and copy the URL to the list
+4. Search for filter lists you want to use. You can for example find them [here](https://filterlists.com/), use those in "uBlock Origin" or "AdBlock Plus" format (however, it's possible that [not all types of rules are supported](https://github.com/bromite/bromite/wiki/AdBlocking)). Go to info, then "View" and copy the URL to the list.
 5. Create a file `lists/example-list.txt` (aka in the `lists` directory) that contains the URLs to filter lists you copied before. It should look like this:
-```
-# Lines starting with # are comments, empty lines are also allowed
-# List one URL per line:
-https://easylist.to/easylist/easylist.txt
-https://...
+    ```
+    # Lines starting with # are comments, empty lines are also allowed
+    # List one URL per line:
+    https://easylist.to/easylist/easylist.txt
+    https://...
 
-# The following line doesn't work, only put either a comment or an URL in one line, not both
-http://  # Invalid comment on URL
-```
+    # The following line doesn't work, only put either a comment or an URL in one line, not both
+    http://  # Invalid comment on URL
+    ```
 5. Save your file, commit and push. GitHub actions should now build the list and create a release
 6. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. 
-7. Set this URL as the filter file in Bromite settings.
+7. Check that the generated filter file size is less than the allowed maximum of [10 MB](https://github.com/bromite/bromite/blob/e5771ef891cf01dd5aeaaec5e092841929a9a541/build/patches/Bromite-AdBlockUpdaterService.patch#L1152-L1153). If it isn't, you must remove some lists
+8. Set this URL as the filter file in Bromite settings.
 
 ### [License](LICENSE)
 This is free as in freedom software. Do whatever you like with it.
