@@ -42,3 +42,4 @@ https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitt
 https://filters.adtidy.org/extension/ublock/filters/224.txt
 https://filters.adtidy.org/extension/ublock/filters/7.txt
 https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+https://filter.futa.gg/hosts.txt
