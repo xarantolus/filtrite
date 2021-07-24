@@ -35,13 +35,14 @@ https://easylist.to/easylist/fanboy-social.txt
 # Annoyances on Twitter
 https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt
 
-# My own block list
-https://raw.githubusercontent.com/xarantolus/nervig/main/annoyances.txt
 
 # ----------------------------------
 # Now some region-specific lists
 # ----------------------------------
-https://easylist.to/easylistgermany/easylistgermany.txt
+https://filters.adtidy.org/extension/ublock/filters/224.txt
+https://filters.adtidy.org/extension/ublock/filters/7.txt
+https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+
 
 # Adguard lists from https://github.com/AdguardTeam/AdguardFilters/tree/master/GermanFilter
 https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt
