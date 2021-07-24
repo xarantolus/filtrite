@@ -2,23 +2,41 @@
 # First, all entries from bromite-extended
 # ----------------------------------
 
-# Default entries from https://github.com/bromite/filters/blob/master/lists.txt
-https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
-https://github.com/uBlockOrigin/uAssets/raw/master/filters/badware.txt
-https://github.com/uBlockOrigin/uAssets/raw/master/filters/privacy.txt
-https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt
-https://github.com/uBlockOrigin/uAssets/raw/master/filters/unbreak.txt
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+# uBlockOrigin
+https://combinatronics.io/uBlockOrigin/uAssets/master/filters/filters.txt
+https://combinatronics.io/uBlockOrigin/uAssets/master/filters/privacy.txt
+https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssets@master/filters/resource-abuse.txt
+https://cdn.statically.io/gh/uBlockOrigin/uAssets/master/filters/unbreak.txt
+https://gitcdn.xyz/cdn/uBlockOrigin/uAssets/44975e8dbc22647302e53321c70c5a9e030566dd/filters/badware.txt
 
-# ----------------------------------
-# Now some region-specific lists
-# ----------------------------------
+
+# AdGuard Base filter
+https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
+
+#AdGuard Mobile Ads filter
+https://filters.adtidy.org/extension/ublock/filters/11.txt
+
+# AdGuard Chinese filter
 https://filters.adtidy.org/extension/ublock/filters/224.txt
+# AdGuard Japanese filter
 https://filters.adtidy.org/extension/ublock/filters/7.txt
-https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-https://filter.futa.gg/hosts.txt
+# KOR: YousList
+https://raw.githubusercontent.com/yous/YousList/master/youslist.txt
+
+# Peter Lowe’s Ad and tracking server list
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext
+
+# Online Malicious URL Blocklist
+https://curben.gitlab.io/malware-filter/urlhaus-filter-online.txt
+
+# EasyPrivacy
+https://easylist.to/easylist/easyprivacy.txt
+
+# EasyList Lite
 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
+# Easylist China
 https://easylist-downloads.adblockplus.org/easylistchina.txt
-https://easylist-downloads.adblockplus.org/easyprivacy.txt
+# CJX's Annoyance List
 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+# CJX's uBlock list
 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
