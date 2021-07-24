@@ -1,6 +1,6 @@
-# ----------------------------------
-# First, all entries from bromite-extended
-# ----------------------------------
+# sinnoken
+# 
+# 
 
 # uBlockOrigin
 https://combinatronics.io/uBlockOrigin/uAssets/master/filters/filters.txt
@@ -8,7 +8,6 @@ https://combinatronics.io/uBlockOrigin/uAssets/master/filters/privacy.txt
 https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssets@master/filters/resource-abuse.txt
 https://cdn.statically.io/gh/uBlockOrigin/uAssets/master/filters/unbreak.txt
 https://gitcdn.xyz/cdn/uBlockOrigin/uAssets/44975e8dbc22647302e53321c70c5a9e030566dd/filters/badware.txt
-
 
 # AdGuard Base filter
 https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
@@ -40,3 +39,33 @@ https://easylist-downloads.adblockplus.org/easylistchina.txt
 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 # CJX's uBlock list
 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
+
+# Default entries from https://github.com/bromite/filters/blob/master/lists.txt
+https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
+https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt
+https://easylist.to/easylist/easylist.txt
+https://easylist.to/easylist/easyprivacy.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt
+https://raw.githubusercontent.com/brave/adblock-lists/master/coin-miners.txt
+https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+
+# Annoying Elements, Cookie promts etc.
+https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
+https://secure.fanboy.co.nz/fanboy-annoyance.txt
+https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
+https://filters.adtidy.org/extension/ublock/filters/14.txt
+
+# Other uBlock Origin filters
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
+
+# CNAME record trackers
+https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
+
+# Other third-party tracking
+https://easylist.to/easylist/fanboy-social.txt
+
+# Annoyances on Twitter
+https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt
