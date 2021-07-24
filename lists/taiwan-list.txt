@@ -17,3 +17,8 @@ https://filters.adtidy.org/extension/ublock/filters/224.txt
 https://filters.adtidy.org/extension/ublock/filters/7.txt
 https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 https://filter.futa.gg/hosts.txt
+https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
+https://easylist-downloads.adblockplus.org/easylistchina.txt
+https://easylist-downloads.adblockplus.org/easyprivacy.txt
+https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
