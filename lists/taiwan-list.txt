@@ -42,15 +42,3 @@ https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitt
 https://filters.adtidy.org/extension/ublock/filters/224.txt
 https://filters.adtidy.org/extension/ublock/filters/7.txt
 https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-
-
-# Adguard lists from https://github.com/AdguardTeam/AdguardFilters/tree/master/GermanFilter
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/adservers.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/antiadblock.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/css_extended.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/general_elemhide.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/general_extensions.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/general_url.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/replace.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/specific.txt
