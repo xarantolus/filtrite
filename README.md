@@ -37,10 +37,13 @@ To create a new list:
     # The following line doesn't work, only put either a comment or an URL in one line, not both
     http://  # Invalid comment on URL
     ```
-5. Save your file, commit and push. GitHub actions should now build the list and create a release
-6. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. 
-7. Check that the generated filter file size is less than the allowed maximum of [10 MB](https://github.com/bromite/bromite/blob/e5771ef891cf01dd5aeaaec5e092841929a9a541/build/patches/Bromite-AdBlockUpdaterService.patch#L1152-L1153). If it isn't, you must remove some lists
-8. Set this URL as the filter file in Bromite settings.
+6. Save your file, commit and push. GitHub actions should now build the list and create a release
+7. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. 
+8. Check that the generated filter file size is less than the allowed maximum of [10 MB](https://github.com/bromite/bromite/blob/e5771ef891cf01dd5aeaaec5e092841929a9a541/build/patches/Bromite-AdBlockUpdaterService.patch#L1152-L1153). If it isn't, you must remove some lists
+9. Set this URL as the filter file in Bromite settings.
+
+Another thing to note is that [GitHub disables scheduled workflows after 60 days](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow), meaning that you sometimes have to commit something to keep your fork "alive".
+
 
 ### [License](LICENSE)
 This is free as in freedom software. Do whatever you like with it.
