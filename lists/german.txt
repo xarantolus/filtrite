@@ -26,6 +26,11 @@ https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.tx
 # CNAME record trackers
 https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
 
+# Other Adguard lists
+https://filters.adtidy.org/extension/ublock/filters/2.txt
+https://filters.adtidy.org/extension/ublock/filters/3.txt
+https://filters.adtidy.org/extension/ublock/filters/11.txt
+
 # Third party fonts
 https://fanboy.co.nz/fanboy-antifonts.txt
 
@@ -43,13 +48,5 @@ https://raw.githubusercontent.com/xarantolus/nervig/main/annoyances.txt
 # ----------------------------------
 https://easylist.to/easylistgermany/easylistgermany.txt
 
-# Adguard lists from https://github.com/AdguardTeam/AdguardFilters/tree/master/GermanFilter
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/whitelist.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/adservers.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/antiadblock.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/css_extended.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/general_elemhide.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/general_extensions.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/general_url.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/replace.txt
-https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/specific.txt
+# Adguard lists from https://github.com/AdguardTeam/AdguardFilters
+https://filters.adtidy.org/extension/ublock/filters/6.txt
