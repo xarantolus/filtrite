@@ -18,6 +18,9 @@ These lists are regularly updated automatically using GitHub Actions.
 
 **Note**: I'm not 100% sure if all list formats that are used are actually supported by [the ruleset generation tool](https://github.com/xarantolus/subresource_filter_tools) (as the output indicates some failures). If you have a comment on that, please open an issue :)
 
+### Advanced blocking
+The normal Bromite ad blocking engine does not support all blocking formats. However, since the introduction of user scripts, it has become possible to block even more annoying elements. If you want more blockers, see my [custom Bromite user scripts repository](https://github.com/xarantolus/bromite-userscripts/).
+
 ### Using your own filter lists
 This program is designed in a way that allows easily adding new lists. 
 
