@@ -22,6 +22,11 @@ https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.tx
 # CNAME record trackers
 https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
 
+# Other Adguard lists
+https://filters.adtidy.org/extension/ublock/filters/2.txt
+https://filters.adtidy.org/extension/ublock/filters/3.txt
+https://filters.adtidy.org/extension/ublock/filters/11.txt
+
 # Third party fonts
 https://fanboy.co.nz/fanboy-antifonts.txt
 

@@ -38,13 +38,22 @@ mkdir -p dist
 mkdir -p logs
 echo "::endgroup::"
 
-echo "::group::Downloading official list"
-wget -O lists/bromite-default.txt https://raw.githubusercontent.com/bromite/filters/master/lists.txt
-echo "::endgroup::"
+# If the default list file exists, we overwrite it with the actual official list
+if [[ -f "lists/bromite-default.txt" ]]; then
+    echo "::group::Downloading official list"
+    wget -O "lists/bromite-default.txt" "https://raw.githubusercontent.com/bromite/filters/master/lists.txt"
+    echo "::endgroup::"
+fi
 
 # Now that everything is set up, we can start actually generating filter lists
 ./filtrite 
 
 echo "::group::Cleanup"
 cleanup
+
+# Reset the downloaded list to the previous text, in case this is run locally
+if [[ -f "lists/bromite-default.txt" ]]; then
+    git restore lists/bromite-default.txt
+fi
+
 echo "::endgroup::"
