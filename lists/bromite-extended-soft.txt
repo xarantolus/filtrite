@@ -11,8 +11,7 @@ https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
 # Annoying Elements, Cookie promts etc.
 https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
-# The next annoyance filter is a bit aggressive - use the "bromite-extended-soft" list to have a less strict variant of this list
-https://secure.fanboy.co.nz/fanboy-annoyance.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
 https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
 https://filters.adtidy.org/extension/ublock/filters/14.txt
 

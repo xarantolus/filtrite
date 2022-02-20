@@ -12,7 +12,7 @@ cleanup() {
 cleanup
 
 # Make sure all dependencies are installed
-sudo apt-get install unzip wget || true
+sudo apt-get install -y unzip wget || true
 
 echo "::endgroup::"
 
@@ -25,7 +25,7 @@ echo "::group::Downloading latest subresource_filter_tools build"
 wget -O "subresource_filter_tools_linux.zip" "https://github.com/xarantolus/subresource_filter_tools/releases/latest/download/subresource_filter_tools_linux-x64.zip"
 
 mkdir -p deps
-unzip -u "subresource_filter_tools_linux.zip" -d deps
+unzip -ou "subresource_filter_tools_linux.zip" -d deps
 
 rm "subresource_filter_tools_linux.zip"
 echo "::endgroup::"
