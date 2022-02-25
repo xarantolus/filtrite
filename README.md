@@ -3,10 +3,7 @@ filtrite is a project for generating filter lists for [Bromite](https://www.brom
 See the page about [Custom Ad Block Filters](https://www.bromite.org/custom-filters) for more info.
 
 # Lists
-You can choose any list from below, copy the link and add it in Bromite by going to settings > AdBlock settings, then setting Filters URL to the one you just copied.
-
-Here's a list:
-
+You can choose any list from the table, then hold the name to copy its link. Add it to Bromite by going to settings > AdBlock settings, then setting "Filters URL" to the link you just copied.
 
 | Link | Description  |
 | ------ | ------|
@@ -20,7 +17,7 @@ These lists are regularly updated automatically using GitHub Actions.
 **Note**: I'm not 100% sure if all list formats that are used are actually supported by [the ruleset generation tool](https://github.com/xarantolus/subresource_filter_tools) (as the output indicates some failures). If you have a comment on that, please open an issue :)
 
 ### Advanced blocking
-The normal Bromite ad blocking engine does not support all blocking formats. However, since the introduction of user scripts, it has become possible to block even more annoying elements. If you want more blockers, see my [custom Bromite user scripts repository](https://github.com/xarantolus/bromite-userscripts/).
+The normal Bromite ad blocking engine does not support all blocking formats. However, since the introduction of user scripts, it has become possible to block even more annoying elements. If you want more blockers (e.g. for cookie prompts), see my [custom Bromite user scripts repository](https://github.com/xarantolus/bromite-userscripts/).
 
 ### Using your own filter lists
 This program is designed in a way that allows easily adding new lists. 
@@ -29,11 +26,11 @@ To create a new list:
 
 1. Fork this repository
 2. Enable GitHub Actions by switching to the "Actions" tab of your repo, then confirming that you want to enable them
-3. Choose a name for the list, e.g. `example-list`
+3. Choose a name for the list, e.g. in the following the name is `example-list`
 4. Search for filter lists you want to use. You can for example find them [here](https://filterlists.com/), use those in "uBlock Origin" or "AdBlock Plus" format (however, it's possible that [not all types of rules are supported](https://github.com/bromite/bromite/wiki/AdBlocking)). Go to info, then "View" and copy the URL to the list.
 5. Create a file `lists/example-list.txt` (aka in the `lists` directory) that contains the URLs to filter lists you copied before. It should look like this:
     ```
-    # Lines starting with # are comments, empty lines are also allowed
+    # Lines starting with # are ignored, empty lines are also allowed
     # List one URL per line:
     https://easylist.to/easylist/easylist.txt
     https://...
