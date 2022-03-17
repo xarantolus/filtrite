@@ -9,6 +9,7 @@ log () {
 cleanup() {
     rm -f filtrite >> /dev/null 2>&1
 }
+
 cleanup
 
 # Make sure all dependencies are installed
@@ -21,13 +22,31 @@ log "Building"
 go build -v -o filtrite
 echo "::endgroup::"
 
-echo "::group::Downloading latest subresource_filter_tools build"
-wget -O "subresource_filter_tools_linux.zip" "https://github.com/xarantolus/subresource_filter_tools/releases/latest/download/subresource_filter_tools_linux-x64.zip"
+echo "::group::Downloading latest ruleset_converter build"
 
-mkdir -p deps
-unzip -ou "subresource_filter_tools_linux.zip" -d deps
+install_bromite_ruleset_converter() {
+    log "Downloading from latest Bromite release"
+    rm -rf deps || true
+    mkdir -p deps
+    wget -O "deps/ruleset_converter" "https://github.com/bromite/bromite/releases/latest/download/ruleset_converter"
+}
 
-rm "subresource_filter_tools_linux.zip"
+install_selfbuilt_ruleset_converter() {
+    log "Downloading from latest self-built release"
+    rm -rf deps || true
+    mkdir -p deps
+    
+    wget -O "subresource_filter_tools_linux.zip" "https://github.com/xarantolus/subresource_filter_tools/releases/latest/download/subresource_filter_tools_linux-x64.zip"
+
+    unzip -ou "subresource_filter_tools_linux.zip" -d deps
+
+    rm "subresource_filter_tools_linux.zip"
+}
+
+# If the latest official Bromite release contains the ruleset_converter tool, we fetch it from there.
+# If not, we just download from another build and unzip it from there
+install_bromite_ruleset_converter || install_selfbuilt_ruleset_converter
+
 echo "::endgroup::"
 
 
