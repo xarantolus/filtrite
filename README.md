@@ -1,6 +1,5 @@
 ## filtrite
-filtrite is a project for generating filter lists for [Bromite](https://www.bromite.org/).
-See the page about [Custom Ad Block Filters](https://www.bromite.org/custom-filters) for more info.
+filtrite is a project for generating filter lists for [Bromite](https://www.bromite.org/). See the page about [Custom Ad Block Filters](https://www.bromite.org/custom-filters) for more info.
 
 # Lists
 You can choose any list from the table, then hold the name to copy its link. Add it to Bromite by going to settings > AdBlock settings, then setting "Filters URL" to the link you just copied.
@@ -12,6 +11,9 @@ You can choose any list from the table, then hold the name to copy its link. Add
 | [Bromite Extended (Soft)](https://github.com/xarantolus/filtrite/releases/latest/download/bromite-extended-soft.dat) | Same as the "Bromite Extended" list, but with less aggressive filtering (should break fewer sites) |
 | [German](https://github.com/xarantolus/filtrite/releases/latest/download/german.dat) | The "Bromite Extended" list with additional region-specific blocklists for german sites |
 
+Alternatively, you can [go here to search forks of this project](https://filterlists.010.one/) for more lists, e.g. for other countries.
+
+
 These lists are regularly updated automatically using GitHub Actions.
 
 **Note**: I'm not 100% sure if all list formats that are used are actually supported by [the ruleset generation tool](https://github.com/xarantolus/subresource_filter_tools) (as the output indicates some failures). If you have a comment on that, please open an issue :)
@@ -20,7 +22,7 @@ These lists are regularly updated automatically using GitHub Actions.
 The normal Bromite ad blocking engine does not support all blocking formats. However, since the introduction of user scripts, it has become possible to block even more annoying elements. If you want more blockers (e.g. for cookie prompts), see my [custom Bromite user scripts repository](https://github.com/xarantolus/bromite-userscripts/).
 
 ### Using your own filter lists
-This program is designed in a way that allows easily adding new lists. 
+This program is designed in a way that allows easily adding new lists.
 
 To create a new list:
 
@@ -39,7 +41,7 @@ To create a new list:
     http://  # Invalid comment on URL
     ```
 6. Save your file, commit and push. GitHub Actions should now build the list and create a release
-7. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. If your URL (except for the username/filename part) contains numbers, you copied the wrong link. 
+7. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. If your URL (except for the username/filename part) contains numbers, you copied the wrong link.
 8. Check that the generated filter file size is less than the allowed maximum of [10 MB](https://github.com/bromite/bromite/blob/c91167ff8d596565cc01e2631e2a813af4e1b1a0/build/patches/Bromite-AdBlockUpdaterService.patch#L1130-L1131). If it isn't, you must remove some lists
 9. Set this URL as the filter file in Bromite settings.
 
