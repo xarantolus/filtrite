@@ -1,8 +1,8 @@
 ## hblock
-https://hblock.molinero.dev/hosts_adblock.txt
+#https://hblock.molinero.dev/hosts_adblock.txt
 
 ## oisd
-https://abp.oisd.nl/
+#https://abp.oisd.nl/
 
 ## GoodbyeAds
 https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
