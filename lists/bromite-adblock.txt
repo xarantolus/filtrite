@@ -1,9 +1,3 @@
-## hblock
-#https://hblock.molinero.dev/hosts_adblock.txt
-
-## oisd
-#https://abp.oisd.nl/
-
 ## GoodbyeAds
 https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
 
@@ -32,6 +26,3 @@ https://filters.adtidy.org/extension/ublock/filters/3.txt
 https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
 # URL Tracking
 https://filters.adtidy.org/windows/filters/17.txt
-
-## I don't care about cookies
-https://www.i-dont-care-about-cookies.eu/abp/
