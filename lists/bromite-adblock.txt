@@ -15,14 +15,14 @@ https://secure.fanboy.co.nz/fanboy-annoyance.txt
 
 ## Adguard
 # Base
-https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
+#https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
 # Mobile
-https://filters.adtidy.org/android/filters/11.txt
+#https://filters.adtidy.org/android/filters/11.txt
 # Spyware
-https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt
+#https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt
 # Tracking
-https://filters.adtidy.org/extension/ublock/filters/3.txt
+#https://filters.adtidy.org/extension/ublock/filters/3.txt
 # Annoyances
-https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
+#https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
 # URL Tracking
-https://filters.adtidy.org/windows/filters/17.txt
+#https://filters.adtidy.org/windows/filters/17.txt
