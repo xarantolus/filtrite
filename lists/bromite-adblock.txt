@@ -1,0 +1,37 @@
+## hblock
+https://hblock.molinero.dev/hosts_adblock.txt
+
+## oisd
+https://abp.oisd.nl/
+
+## GoodbyeAds
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
+
+## GoodbyeAds-Youtube
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt
+
+## StevenBlack Unified hosts + fakenews + gambling
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
+
+## Easylist
+https://easylist.to/easylist/easylist.txt
+https://easylist.to/easylist/easyprivacy.txt
+https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
+https://secure.fanboy.co.nz/fanboy-annoyance.txt
+
+## Adguard
+# Base
+https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
+# Mobile
+https://filters.adtidy.org/android/filters/11.txt
+# Spyware
+https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt
+# Tracking
+https://filters.adtidy.org/extension/ublock/filters/3.txt
+# Annoyances
+https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
+# URL Tracking
+https://filters.adtidy.org/windows/filters/17.txt
+
+## I don't care about cookies
+https://www.i-dont-care-about-cookies.eu/abp/
