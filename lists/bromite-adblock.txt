@@ -5,7 +5,7 @@ https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-
 https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt
 
 ## StevenBlack Unified hosts + fakenews + gambling
-https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
+#https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
 
 ## Easylist
 https://easylist.to/easylist/easylist.txt
