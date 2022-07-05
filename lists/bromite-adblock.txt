@@ -2,7 +2,7 @@
 #https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
 
 ## GoodbyeAds-Youtube
-#https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt
 
 ## spam404
 https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt
@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt
 https://www.i-dont-care-about-cookies.eu/abp/
 
 ## StevenBlack Unified hosts + fakenews + gambling
-#https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
 
 ## Easylist
 https://easylist.to/easylist/easylist.txt
