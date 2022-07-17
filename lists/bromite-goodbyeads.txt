@@ -1,4 +1,2 @@
 ## GoodbyeAds
 https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt
-
-
