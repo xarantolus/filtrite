@@ -20,7 +20,7 @@ https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
 https://filters.adtidy.org/extension/ublock/filters/14.txt
 
 # CNAME record trackers
-https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
+# https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
 
 # Other Adguard lists
 https://filters.adtidy.org/extension/ublock/filters/2.txt
