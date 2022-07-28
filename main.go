@@ -16,6 +16,7 @@ const (
 	distDir = "dist"
 	logDir  = "logs"
 
+	// This is the "kMaxBodySize" from https://github.com/bromite/bromite/blob/master/build/patches/Bromite-AdBlockUpdaterService.patch
 	bromiteMaxFilterSize = 1024 * 1024 * 10
 )
 
@@ -51,7 +52,7 @@ func generateFilterList(listTextFile string) (err error) {
 	if err != nil {
 		return fmt.Errorf("creating temp directory for filter lists: %w", err)
 	}
-	// defer os.RemoveAll(tmpDir)
+	defer os.RemoveAll(tmpDir)
 
 	log.Printf("Downloading %d filter lists...\n", len(filterListURLs))
 
