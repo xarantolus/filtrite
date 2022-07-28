@@ -15,6 +15,8 @@ const (
 	listDir = "lists"
 	distDir = "dist"
 	logDir  = "logs"
+
+	bromiteMaxFilterSize = 1024 * 1024 * 10
 )
 
 // generateFilterList generates a filter list from the listTextFile
@@ -49,7 +51,7 @@ func generateFilterList(listTextFile string) (err error) {
 	if err != nil {
 		return fmt.Errorf("creating temp directory for filter lists: %w", err)
 	}
-	defer os.RemoveAll(tmpDir)
+	// defer os.RemoveAll(tmpDir)
 
 	log.Printf("Downloading %d filter lists...\n", len(filterListURLs))
 
@@ -75,6 +77,15 @@ func generateFilterList(listTextFile string) (err error) {
 	err = util.GenerateDistributableList(paths, outputFile, logFile)
 	if err != nil {
 		return fmt.Errorf("generating distributable list: %w", err)
+	}
+
+	// Check if output file is larger than 10mb
+	fileInfo, err := os.Stat(outputFile)
+	if err != nil {
+		return fmt.Errorf("getting filter output file info: %w", err)
+	}
+	if fileInfo.Size() > bromiteMaxFilterSize {
+		return fmt.Errorf("filter list is too large for Bromite (%d bytes > %d bytes)", fileInfo.Size(), bromiteMaxFilterSize)
 	}
 
 	err = util.AppendReleaseList(listTextFile, len(paths), len(filterListURLs))
@@ -104,7 +115,7 @@ func main() {
 		if err != nil {
 			log.Printf("Error while generating filter for %q: %s\n", path, err.Error())
 		}
-		return nil
+		return err
 	})
 	if err != nil {
 		panic("error while walking: " + err.Error())

@@ -1,6 +1,7 @@
-echo "::group::Init"
+#!/usr/bin/env bash
+set -euo pipefail
 
-set -e
+echo "::group::Init"
 
 log () {
     echo `date +"%m/%d/%Y %H:%M:%S"` "$@"
@@ -35,7 +36,7 @@ install_selfbuilt_ruleset_converter() {
     log "Downloading from latest self-built release"
     rm -rf deps || true
     mkdir -p deps
-    
+
     wget -O "subresource_filter_tools_linux.zip" "https://github.com/xarantolus/subresource_filter_tools/releases/latest/download/subresource_filter_tools_linux-x64.zip"
 
     unzip -ou "subresource_filter_tools_linux.zip" -d deps
@@ -65,7 +66,7 @@ if [[ -f "lists/bromite-default.txt" ]]; then
 fi
 
 # Now that everything is set up, we can start actually generating filter lists
-./filtrite 
+./filtrite
 
 echo "::group::Cleanup"
 cleanup
