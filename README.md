@@ -42,7 +42,7 @@ To create a new list:
     ```
 6. Save your file, commit and push. GitHub Actions should now build the list and create a release
 7. After GitHub Actions generated the release, you can copy the linked URL in the release to always get the latest generated version. This URL looks something like `https://github.com/USERNAME/filtrite/releases/latest/download/FILENAME.dat`. If your URL (except for the username/filename part) contains numbers, you copied the wrong link.
-8. Check that the generated filter file size is less than the allowed maximum of [10 MB](https://github.com/bromite/bromite/blob/c91167ff8d596565cc01e2631e2a813af4e1b1a0/build/patches/Bromite-AdBlockUpdaterService.patch#L1130-L1131). If it isn't, you must remove some lists
+8. Check that the generated filter file size is less than the allowed maximum of [20 MB](https://github.com/bromite/bromite/blob/6f40f8341ab3fbcab458c10fe7b6bbcb8f881404/build/patches/Bromite-subresource-adblocker.patch#L1160-L1161). If it isn't, you must remove some lists
 9. Set this URL as the filter file in Bromite settings.
 
 Another thing to note is that [GitHub disables scheduled workflows after 60 days](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow), meaning that you sometimes have to commit something to keep your fork "alive".

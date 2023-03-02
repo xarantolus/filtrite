@@ -16,8 +16,8 @@ const (
 	distDir = "dist"
 	logDir  = "logs"
 
-	// This is the "kMaxBodySize" from https://github.com/bromite/bromite/blob/master/build/patches/Bromite-AdBlockUpdaterService.patch
-	bromiteMaxFilterSize = 1024 * 1024 * 10
+	// This is the "kMaxBodySize" from https://github.com/bromite/bromite/blob/6f40f8341ab3fbcab458c10fe7b6bbcb8f881404/build/patches/Bromite-subresource-adblocker.patch#L1160-L1161
+	bromiteMaxFilterSize = 1024 * 1024 * 20
 )
 
 // generateFilterList generates a filter list from the listTextFile
