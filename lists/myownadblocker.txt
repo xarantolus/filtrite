@@ -3,3 +3,5 @@ https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt
 
 # Annoying ads
 https://xngqoc.com^
+
+https://github.com/xarantolus/filtrite/releases/latest/download/bromite-extended.dat
