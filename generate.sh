@@ -44,9 +44,8 @@ install_selfbuilt_ruleset_converter() {
     rm "subresource_filter_tools_linux.zip"
 }
 
-# If the latest official Bromite release contains the ruleset_converter tool, we fetch it from there.
-# If not, we just download from another build and unzip it from there
-install_bromite_ruleset_converter || install_selfbuilt_ruleset_converter
+# Use more up to date first, but if that fails, fall back to old bromite tool
+install_selfbuilt_ruleset_converter || install_bromite_ruleset_converter
 
 echo "::endgroup::"
 
