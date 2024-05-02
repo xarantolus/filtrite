@@ -55,6 +55,8 @@ func DownloadURLs(inputURLs []string, tempDir string) (outputPaths []string, err
 		outputPaths = append(outputPaths, fn)
 	}
 
+	err = nil
+
 	if errCount > (len(inputURLs) / 2) {
 		err = fmt.Errorf("%d/%d urls couldn't be downloaded", errCount, len(inputURLs))
 	}
