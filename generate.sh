@@ -13,9 +13,6 @@ cleanup() {
 
 cleanup
 
-# Make sure all dependencies are installed
-sudo apt-get install -y unzip wget || true
-
 echo "::endgroup::"
 
 echo "::group::Build executable"

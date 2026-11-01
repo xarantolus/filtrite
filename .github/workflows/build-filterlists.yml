@@ -22,6 +22,10 @@ jobs:
     - name: Download repo
       uses: actions/checkout@v4
 
+    - name: Dependencies
+      run: |
+        sudo apt-get install -y unzip wget
+
     - name: Runnning build/generation script
       shell: bash
       run: |
