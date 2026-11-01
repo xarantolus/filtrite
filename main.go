@@ -68,6 +68,12 @@ func generateFilterList(listTextFile string) (err error) {
 		return fmt.Errorf("all lists failed to download")
 	}
 
+	log.Println("Cleaning filter lists...")
+	err = util.CleanLists(paths)
+	if err != nil {
+		return fmt.Errorf("cleaning filter lists: %w", err)
+	}
+
 	// make sure dir exists
 	err = os.MkdirAll(filepath.Dir(outputFile), 0664)
 	if err != nil {

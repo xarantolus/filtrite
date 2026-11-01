@@ -21,7 +21,7 @@ https://filters.adtidy.org/extension/ublock/filters/14.txt
 
 # Other Adguard lists
 https://filters.adtidy.org/extension/ublock/filters/2.txt
-https://filters.adtidy.org/extension/ublock/filters/3.txt
+https://filters.adtidy.org/extension/chromium-mv3/filters/3.txt
 https://filters.adtidy.org/extension/ublock/filters/11.txt
 
 # Third party fonts
